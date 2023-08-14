@@ -1,0 +1,141 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--main-white);
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+
+.navbar{
+    margin: 0%;
+    background-color: var(--main-red);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar > ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navbar > ul > li{
+    margin: 0% 2.5rem;
+    font-size: 1.5rem;
+}
+
+/* Welcome Section */
+
+.welcome{
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-title{
+    color:var(--main-white);
+    margin: 0%;
+    padding: 0%;
+    font-size:4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+#welcome-subtitle{
+    color:var(--main-red);
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Projects Section */
+
+.projects-section {
+    background-color: var(--main-blue);
+    padding: 10rem 2rem 5rem;
+}
+
+#projects-title {
+    max-width: 640px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto 3rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+    margin-bottom: 7%;
+    padding: 0% 5%;
+}
+
+.project-card {
+    height: 65vh;
+    width: 25rem;
+    margin: 20px;
+    line-height: 0.7;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    margin: 0%;
+}
+
+.project-title {
+    text-align: center;
+    padding: 7% 0%;
+    background-color: var(--main-gray);
+    margin: 0%;
+    font-size: 1.4rem;
+}
+
+.hover-only {
+    color: var(--main-gray);
+    margin: 0px 8px;
+}
+
+.btn {
+    background-color: var(--main-gray);
+    display: flex;
+    width: 7rem;
+    gap: 10px;
+    align-items: center;
+    padding: 1.5%;
+    margin: 20px 40px;
+    position: relative;
+    left: 42%;
+}
+
+.btn:hover .fas {
+    margin-left: 2px;
+}
